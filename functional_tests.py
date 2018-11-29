@@ -50,6 +50,7 @@ class NewVisitorTest(unittest.TestCase):
         inputbox.send_keys('Use peacock feathers to make a fly')
         inputbox.send_keys(Keys.ENTER)
 
+
         # 页面再次更新，清单中显示了这两个待办事项
         self.check_for_row_in_list_table('Buy peacock feathers')
         self.check_for_row_in_list_table('Use peacock feathers to make a fly')
